@@ -1,9 +1,33 @@
+<!-- Command line options:
+
+--size     (takes 1 arg)
+--limit    (takes 1 arg)
+-b/--cube
+-e/--empty
+-x/--explicit
+-d/--debug
+-s/--start (takes 3 args)
+-j/--delta (takes 3 args)
+-o/--out   (takes 1 arg)
+
+-->
+
 <html>
 	<head>
-		<title>Testing</title>
+		<title>Levels</title>
 	</head>
 	
 	<body>
-		<h2>Testing2</h2>
+		<h3>Welcome to the Levels testing environment!</h3>
+		<p>Please select the options you want to run Levels with:</p>
+		<form action="/testing.php">
+			<input type="checkbox" name="b" value="cube">     <code>-b</code> / <code>--cube</code>     <br>
+			<input type="checkbox" name="e" value="empty">    <code>-e</code> / <code>--empty</code>    <br>
+			<input type="checkbox" name="x" value="explicit"> <code>-x</code> / <code>--explicit</code> <br>
+			<input type="checkbox" name="d" value="debug">    <code>-d</code> / <code>--debug</code>    <br>
+			<input type="checkbox" name="s" value="start">    <code>-s</code> / <code>--start</code>    <br>
+			<input type="checkbox" name="j" value="delta">    <code>-j</code> / <code>--delta</code>    <br>
+			<input type="checkbox" name="o" value="out">      <code>-o</code> / <code>--out</code>      <br>
+		</form>
 	</body>
 </html>
