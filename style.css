@@ -1,5 +1,5 @@
 form  { display: table;      }
-line  { display: table-row;  }
+align { display: table-row;  }
 label { display: table-cell; }
 input { display: table-cell; }
 
