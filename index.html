@@ -22,50 +22,55 @@
 		<h3>Welcome to the Levels testing environment!</h3>
 		
 		<!-- Command line options -->
-		Please select the command line options you want to run Levels with:
-		<br>
-		
-		<input type="checkbox" id="flag_b">Take a single level and repeat into a cube (<code>--cube</code> or <code>-b</code>)                  <br>
-		<input type="checkbox" id="flag_e">Take a single level and append empty levels to form a cube (<code>--empty</code> or <code>-e</code>) <br>
-		<input type="checkbox" id="flag_x">Turn off implicit input and output (<code>--explicit</code> or <code>-x</code>)                      <br>
-		<input type="checkbox" id="flag_d">Output debug information after each command (<code>--debug</code> or <code>-d</code>)                <br>
-		<br>
-		
-		<!-- Size and limit specifiers -->
-		Enter the size of the Levels cube, and optionally the max number of commands to be run:
-		<br>
-		<form>
-			<align>
-				<label for="size">Size: </label>
-				<input type="text" id="size" min="1" size="3">
-			</align>
-			<align>
-				<label for="limit">Limit: </label>
-				<input type="text" id="limit" min="1" value="1000000" size="6">
-			</align>
-		</form>
-			<!-- Start, delta and output flags -->
-			Modify the starting coordinates, the ip delta and the number of outputs:
+		<checkboxes>
+			Please select the command line options you want to run Levels with:
 			<br>
-		<form>
-			<align>
-				<label>Starting co-ordinates: </label>
-				<input type="text" id="start_x" min="0" size="2" value="1">
-				<input type="text" id="start_y" min="0" size="2" value="0">
-				<input type="text" id="start_z" min="0" size="2" value="0">
-			</align>
-			<align>
-				<label>IP delta: </label>
-				<input type="text" id="delta_x" size="2" value="1">
-				<input type="text" id="delta_y" size="2" value="0">
-				<input type="text" id="delta_z" size="2" value="0">
-			</align>
-			<align>
-				<label for="out">Outputs: </label>
-				<input type="text" id="out" min="0" size="2" value="1">      
-			</align>
+		
+			<input type="checkbox" id="flag_b">Take a single level and repeat into a cube (<code>--cube</code> or <code>-b</code>)                  <br>
+			<input type="checkbox" id="flag_e">Take a single level and append empty levels to form a cube (<code>--empty</code> or <code>-e</code>) <br>
+			<input type="checkbox" id="flag_x">Turn off implicit input and output (<code>--explicit</code> or <code>-x</code>)                      <br>
+			<input type="checkbox" id="flag_d">Output debug information after each command (<code>--debug</code> or <code>-d</code>)                <br>
 			<br>
-		</form>
+		</checkboxes>
+		
+		<editables>
+			<!-- Size and limit specifiers -->
+			Enter the size of the Levels cube, and optionally the max number of commands to be run:
+			<br>
+			<form>
+				<align>
+					<label for="size">Size: </label>
+					<input type="text" id="size" min="1" size="3">
+				</align>
+				<align>
+					<label for="limit">Limit: </label>
+					<input type="text" id="limit" min="1" value="1000000" size="6">
+				</align>
+			</form>
+				<!-- Start, delta and output flags -->
+				Modify the starting coordinates, the ip delta and the number of outputs:
+				<br>
+			<form>
+				<align>
+					<label>Starting co-ordinates: </label>
+					<input type="text" id="start_x" min="0" size="2" value="1">
+					<input type="text" id="start_y" min="0" size="2" value="0">
+					<input type="text" id="start_z" min="0" size="2" value="0">
+				</align>
+				<align>
+					<label>IP delta: </label>
+					<input type="text" id="delta_x" size="2" value="1">
+					<input type="text" id="delta_y" size="2" value="0">
+					<input type="text" id="delta_z" size="2" value="0">
+				</align>
+				<align>
+					<label for="out">Outputs: </label>
+					<input type="text" id="out" min="0" size="2" value="1">      
+				</align>
+				<br>
+			</form>
+		</editables>
+		
 		<div class="inline-div">
 			<textarea id="code" placeholder="Enter Levels code to run" rows="15" cols="30"></textarea>
 		</div>
