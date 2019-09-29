@@ -12,10 +12,8 @@ input {
 
 section {
     float: left;
-}
-
-aside {
-    float: right;
+    margin: 0 1.5%;
+    width: 30%;
 }
 
 footer {
