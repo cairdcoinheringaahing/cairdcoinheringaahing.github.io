@@ -1,7 +1,10 @@
 form  { display: table;      }
 align { display: table-row;  }
 label { display: table-cell; }
-input { display: table-cell; }
+input {
+    display: table-cell;
+    text-align: right;
+}
 
 .inline-div {
     display:inline-block;
