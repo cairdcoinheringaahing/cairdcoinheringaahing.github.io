@@ -19,8 +19,23 @@
 	
 	<body>
 		<h3>Welcome to the Levels testing environment!</h3>
-		<p>Please enter the options you want to run Levels with (shorthand or langhand are both fine):</p>
-		<textarea name="flags" rows="2" cols="50" placeholder="Enter flags in here, space separated.
-Program input and encoding flags not required"></textarea>
+		
+		<!-- Size and limit specifiers -->
+		<p>Enter the size of the Levels cube, and optionally the max number of commands to be run:</p>
+		
+		Size: <input type="number" id="size" min="1"><br>
+		Limit: <input type="number" id="limit" min="1" value="1000000"><br>
+		
+		<!-- Command line options -->
+		<p>Please select the command line options you want to run Levels with:</p>
+		
+		<input type="checkbox" id="flag_b">Take a single level and repeat into a cube (<code>--cube</code> or <code>-b</code>)                  <br>
+		<input type="checkbox" id="flag_e">Take a single level and append empty levels to form a cube (<code>--empty</code> or <code>-e</code>) <br>
+		<input type="checkbox" id="flag_x">Turn off implicit input and output (<code>--explicit</code> or <code>-x</code>)                      <br>
+		<input type="checkbox" id="flag_d">Output debug information after each command (<code>--debug</code> or <code>-d</code>)                <br>
+		
+		<!-- Start, delta and output flags -->
+		<p></p>
+		
 	</body>
 </html>
