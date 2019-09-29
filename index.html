@@ -18,30 +18,32 @@
 	</head>
 	
 	<body>
-		<h3>Welcome to the Levels testing environment!</h3>
+		<div class="container">
+			<h3>Welcome to the Levels testing environment!</h3>
 		
-		<!-- Size and limit specifiers -->
-		<p>Enter the size of the Levels cube, and optionally the max number of commands to be run:</p>
+			<!-- Size and limit specifiers -->
+			<p>Enter the size of the Levels cube, and optionally the max number of commands to be run:</p>
 		
-		Size: <input type="text" id="size" min="1" size="3">                   <br>
-		Limit: <input type="text" id="limit" min="1" value="1000000" size="6"> <br>
-		<br>
+			Size: <input type="text" id="size" min="1" size="3">                   <br>
+			Limit: <input type="text" id="limit" min="1" value="1000000" size="6"> <br>
+			<br>
 		
-		<!-- Command line options -->
-		<p>Please select the command line options you want to run Levels with:</p>
+			<!-- Command line options -->
+			<p>Please select the command line options you want to run Levels with:</p>
 		
-		<input type="checkbox" id="flag_b">Take a single level and repeat into a cube (<code>--cube</code> or <code>-b</code>)                  <br>
-		<input type="checkbox" id="flag_e">Take a single level and append empty levels to form a cube (<code>--empty</code> or <code>-e</code>) <br>
-		<input type="checkbox" id="flag_x">Turn off implicit input and output (<code>--explicit</code> or <code>-x</code>)                      <br>
-		<input type="checkbox" id="flag_d">Output debug information after each command (<code>--debug</code> or <code>-d</code>)                <br>
-		<br>
+			<input type="checkbox" id="flag_b">Take a single level and repeat into a cube (<code>--cube</code> or <code>-b</code>)                  <br>
+			<input type="checkbox" id="flag_e">Take a single level and append empty levels to form a cube (<code>--empty</code> or <code>-e</code>) <br>
+			<input type="checkbox" id="flag_x">Turn off implicit input and output (<code>--explicit</code> or <code>-x</code>)                      <br>
+			<input type="checkbox" id="flag_d">Output debug information after each command (<code>--debug</code> or <code>-d</code>)                <br>
+			<br>
 		
-		<!-- Start, delta and output flags -->
-		<p>Modify the starting coordinates, the ip delta and the number of outputs:</p>
+			<!-- Start, delta and output flags -->
+			<p>Modify the starting coordinates, the ip delta and the number of outputs:</p>
 		
-		Starting co-ordinates: <input type="text" id="start_x" min="0" size="2"> <input type="text" id="start_y" min="0" size="2"> <input type="text" id="start_z" min="0" size="2"> <br>
-		IP delta: <input type="text" id="delta_x" size="2"> <input type="text" id="delta_y" size="2"> <input type="text" id="delta_z" size="2">                                      <br>
-		Outputs: <input type="text" id="out" min="0" size="2">                                                                                                                           <br>
-		<br>
+			Starting co-ordinates: <input type="text" id="start_x" min="0" size="2"> <input type="text" id="start_y" min="0" size="2"> <input type="text" id="start_z" min="0" size="2"> <br>
+			IP delta: <input type="text" id="delta_x" size="2"> <input type="text" id="delta_y" size="2"> <input type="text" id="delta_z" size="2">                                      <br>
+			Outputs: <input type="text" id="out" min="0" size="2">                                                                                                                           <br>
+			<br>
+		</div>
 	</body>
 </html>
