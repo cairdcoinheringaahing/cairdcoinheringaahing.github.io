@@ -19,11 +19,11 @@
 	</head>
 	
 	<body>
-		<div class="container">
+		<form>
 			<h3>Welcome to the Levels testing environment!</h3>
 		
 			<!-- Size and limit specifiers -->
-			<p>Enter the size of the Levels cube, and optionally the max number of commands to be run:</p>
+			Enter the size of the Levels cube, and optionally the max number of commands to be run:
 		
 			Size: <input type="text" id="size" min="1" size="3">                   <br>
 			Limit: <input type="text" id="limit" min="1" value="1000000" size="6"> <br>
@@ -45,12 +45,12 @@
 			IP delta: <input type="text" id="delta_x" size="2"> <input type="text" id="delta_y" size="2"> <input type="text" id="delta_z" size="2">                                      <br>
 			Outputs: <input type="text" id="out" min="0" size="2">                                                                                                                           <br>
 			<br>
+		</form>
+		<div class="inline-div">
+			<textarea id="code" placeholder="Enter Levels code to run" rows="15" cols="30"></textarea>
 		</div>
 		<div class="inline-div">
-			<textarea id="code" placeholder="Enter Levels code to run" rows="25" cols="25"></textarea>
-		</div>
-		<div class="inline-div">
-			<textarea id="input" placeholder="Enter STDIN input" rows="25" cols="25"></textarea>
+			<textarea id="input" placeholder="Enter STDIN input" rows="15" cols="30"></textarea>
 		</div>
 	</body>
 </html>
