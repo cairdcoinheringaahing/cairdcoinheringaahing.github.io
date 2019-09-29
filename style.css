@@ -1,12 +1,7 @@
-.container {
-  width: 50px;
-  clear: both;
-}
-
-.container input {
-  width: 100%;
-  clear: both;
-}
+form  { display: table;      }
+p     { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }
 
 .inline-div {
     display:inline-block;
