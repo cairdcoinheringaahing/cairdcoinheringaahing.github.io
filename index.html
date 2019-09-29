@@ -20,7 +20,7 @@
 	
 	<body>
 		<header>
-			<h3>Welcome to the Levels testing environment! 0</h3>
+			<centre><h3>Welcome to the Levels testing environment! 1</h3></centre>
 		</header>
 		
 		<section>
@@ -62,7 +62,7 @@
 		</section>
 		
 		<!-- Command line options -->
-		<aside>
+		<section>
 			Please select the command line options you want to run Levels with:
 			<br>
 		
@@ -71,16 +71,10 @@
 			<input type="checkbox" id="flag_x">Turn off implicit input and output (<code>--explicit</code> or <code>-x</code>)                      <br>
 			<input type="checkbox" id="flag_d">Output debug information after each command (<code>--debug</code> or <code>-d</code>)                <br>
 			<br>
-		</aside>
-		<br>
+		</section>
 		
-		<footer>
-			<div class="inline-div">
-				<textarea id="code" placeholder="Enter Levels code to run" rows="15" cols="30"></textarea>
-			</div>
-			<div class="inline-div">
-				<textarea id="input" placeholder="Enter STDIN input" rows="15" cols="30"></textarea>
-			</div>
-		</footer>
+		<section>
+			<textarea id="input" placeholder="Enter STDIN input" rows="15" cols="30"></textarea>
+		</section>
 	</body>
 </html>
