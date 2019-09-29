@@ -23,8 +23,9 @@
 		<!-- Size and limit specifiers -->
 		<p>Enter the size of the Levels cube, and optionally the max number of commands to be run:</p>
 		
-		Size: <input type="number" id="size" min="1"><br>
-		Limit: <input type="number" id="limit" min="1" value="1000000"><br>
+		Size: <input type="number" id="size" min="1" size="3"><br>
+		Limit: <input type="number" id="limit" min="1" value="1000000" size="6"><br>
+		<br>
 		
 		<!-- Command line options -->
 		<p>Please select the command line options you want to run Levels with:</p>
@@ -33,9 +34,11 @@
 		<input type="checkbox" id="flag_e">Take a single level and append empty levels to form a cube (<code>--empty</code> or <code>-e</code>) <br>
 		<input type="checkbox" id="flag_x">Turn off implicit input and output (<code>--explicit</code> or <code>-x</code>)                      <br>
 		<input type="checkbox" id="flag_d">Output debug information after each command (<code>--debug</code> or <code>-d</code>)                <br>
+		<br>
 		
 		<!-- Start, delta and output flags -->
-		<p></p>
+		<p>Modify the starting coordinates, the ip delta and the number of outputs:</p>
 		
+		Starting co-ordinates: 
 	</body>
 </html>
