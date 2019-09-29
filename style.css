@@ -10,10 +10,8 @@ input {
     display: inline-block;
 }
 
-.checkboxes {
-    float: right;
-}
-
-.editables {
+section {
     float: left;
+    margin: 0 1.5%;
+    width: 30%;
 }
