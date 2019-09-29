@@ -77,13 +77,13 @@
 			<textarea id="input" placeholder="Enter STDIN input" rows="15" cols="30"></textarea>
 		</section>
 		
-		<div ng-if="document.enter != true">
+		<div ng-if="document.enter === undefined">
 			<center>
 				<input type="submit" id="run" value="Create program">
 			</center>
 		</div>
 		
-		<div ng-if="document.enter == true">
+		<div ng-if="document.enter === true">
 			<textarea></textarea>
 		</div>
 	</body>
